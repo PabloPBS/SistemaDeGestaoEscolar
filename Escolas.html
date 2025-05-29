@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Escolas</title>
+    <link rel="stylesheet" href="app/public/css/styleEscolas.css">
+</head>
+<body>
+
+    <h1>Gerenciamento de Escolas</h1>
+
+    <!-- Formulário de Cadastro -->
+    <div id="formCadastrarEscola">
+        <h2>Cadastrar Escola</h2>
+        <form id="formCadastrarEscola">
+            <input type="text" id="nomeEscola" placeholder="Nome da Escola" required />
+            <input type="text" id="enderecoEscola" placeholder="Endereço da Escola" required />
+
+            <label for="statusEscola">Status:</label>
+            <select id="statusEscola" name="statusEscola">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Tabela de Escolas -->
+    <table id="escolasTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <!-- Modal para Cadastro de Escola -->
+    <div id="modalCadastrarEscola" style="display:none;">
+        
+    </div>
+
+    <script src="app/public/js/scriptEscolas.js"></script>
+
+</body>
+</html>

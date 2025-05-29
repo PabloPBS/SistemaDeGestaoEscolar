@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Professores</title>
+    <link rel="stylesheet" href="app/public/css/styleProfessores.css">
+</head>
+<body>
+
+    <h1>Gerenciamento de Professores</h1>
+
+    <!-- Formulário de Cadastro -->
+    <div id="formCadastrarProfessor">
+        <h2>Cadastrar Professor</h2>
+        <form>
+            <label for="nomeProfessor">Nome do Professor:</label>
+            <input type="text" id="nomeProfessor" placeholder="Nome do Professor" required />
+            
+            <label for="idTurmaProfessor">ID da Turma (opcional):</label>
+            <input type="number" id="idTurmaProfessor" placeholder="ID da Turma" />
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Tabela de Professores -->
+    <div class="table-section">
+        <table id="professoresTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>ID Turma</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app/public/js/scriptProfessores.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Turmas</title>
+    <link rel="stylesheet" href="app/public/css/styleTurmas.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciamento de Turmas</h1>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <section class="form-section">
+        <h2>Cadastrar Turma</h2>
+        <form id="formCadastrarTurma">
+            <input type="text" id="nomeTurma" placeholder="Nome da Turma" required />
+
+            <input type="text" id="turnoTurma" placeholder="Turno da Turma" required />
+
+            <input type="number" id="idEscolaTurma" placeholder="ID da Escola" required />
+
+            <label for="statusTurma">Status:</label>
+            <select id="statusTurma" name="statusTurma">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Tabela de Turmas -->
+    <section class="table-section">
+        <table id="turmasTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Turno</th>
+                    <th>Id Escola</th>
+                    <th>Status</th> 
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <script src="app/public/js/scriptTurmas.js"></script>
+</body>
+</html>
